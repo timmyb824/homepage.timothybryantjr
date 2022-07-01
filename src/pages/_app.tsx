@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/global.css';
 import Head from 'next/head';
+import Script from "next/script";
+
 
 const App = ({ Component, pageProps }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -18,6 +20,24 @@ const App = ({ Component, pageProps }) => {
           key="viewport"
           maximum-scale="1"
         />
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-3PF9LGX1VG`}
+        />
+
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-3PF9LGX1VG', {
+                    page_path: window.location.pathname,
+                  });
+                      `}
+        </Script>
+
+
       </Head>
 
       <div
