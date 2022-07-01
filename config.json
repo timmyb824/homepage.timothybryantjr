@@ -1,0 +1,40 @@
+{
+  "readmeUrl": "https://github.com/timmyb824/timmyb824/blob/main/README.md",
+  "title": "Timmyb's Homepage",
+  "name": "Tim Bryant",
+  "ascii": "Timothy Bryant",
+  "social": {
+    "github": "timmyb824",
+    "linkedin": "timothy-bryant-7aa00026"
+  },
+  "email": "timothybryant3@gmail.com",
+  "ps1_hostname": "homepage",
+  "ps1_username": "visitor",
+  "blog": "blog.timothybryantjr.com",
+  "repo": "https://github.com/timmyb824/homepage.timothybryantjr",
+  "resume_url": "https://drive.google.com/file/d/1nmnHJp84iC3beuj8KVoreS2CpOfkMo6o/view?usp=sharing",
+  "donate_urls": {
+    "paypal": "",
+    "patreon": ""
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFDB",
+      "foreground": "#282a36",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#8B6BB9",
+      "blue": "#67AFC0",
+      "red": "#ff5555"
+    },
+    "dark": {
+      "background": "#282a36",
+      "foreground": "#f8f8f2",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#bd93f9",
+      "blue": "#8be9fd",
+      "red": "#ff5555"
+    }
+  }
+}
