@@ -11,6 +11,7 @@ const App = ({ Component, pageProps }) => {
     inputRef.current.focus();
   };
 
+
   return (
     <>
       <Head>
@@ -20,25 +21,24 @@ const App = ({ Component, pageProps }) => {
           key="viewport"
           maximum-scale="1"
         />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <Script
-          strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-3PF9LGX1VG`}
-        />
-
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'G-3PF9LGX1VG', {
-                    page_path: window.location.pathname,
-                  });
-                      `}
-        </Script>
-
-
       </Head>
+
+        {/* Global site tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-3PF9LGX1VG`}
+      />
+
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-3PF9LGX1VG', {
+                  page_path: window.location.pathname,
+                });
+                    `}
+      </Script>
 
       <div
         className="text-light-foreground dark:text-dark-foreground min-w-max text-xs md:min-w-full md:text-base"
